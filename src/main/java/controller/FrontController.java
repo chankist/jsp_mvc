@@ -31,6 +31,11 @@ public class FrontController extends HttpServlet {
 		
 		if(command.equals("/memberJoin.do")) {
 			request.getRequestDispatcher("memberJoin.jsp").forward(request, response);
+			
+		} else if(command.equals("/memberJoinAction.do")) {
+			//DB에 회원가입
+			
+			
 		}
 		
 		
