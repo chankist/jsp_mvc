@@ -11,14 +11,13 @@ public class BoardJoinDto {
 	private Timestamp regdate;
 	private String userid;
 	private String username;
-	private String uemail;
-	
+	private String email;
 	public BoardJoinDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	public BoardJoinDto(int boardnum, String title, String content, int hit, Timestamp regdate, String userid,
-			String username, String uemail) {
+			String username, String email) {
 		super();
 		this.boardnum = boardnum;
 		this.title = title;
@@ -27,7 +26,7 @@ public class BoardJoinDto {
 		this.regdate = regdate;
 		this.userid = userid;
 		this.username = username;
-		this.uemail = uemail;
+		this.email = email;
 	}
 	public int getBoardnum() {
 		return boardnum;
@@ -71,12 +70,14 @@ public class BoardJoinDto {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getUemail() {
-		return uemail;
+	public String getEmail() {
+		return email;
 	}
-	public void setUemail(String uemail) {
-		this.uemail = uemail;
+	public void setEmail(String email) {
+		this.email = email;
 	}
+	
+	
 	
 	
 }
